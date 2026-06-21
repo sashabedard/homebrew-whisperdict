@@ -25,9 +25,9 @@ cask "whisperdict" do
     WhisperDict needs Accessibility permission to paste into other apps —
     grant it in System Settings → Privacy & Security → Accessibility on first use.
 
-    This app is ad-hoc signed (not yet notarized). If macOS blocks it with
-    "could not verify … is free of malware", run:
+    This app is ad-hoc signed (not yet notarized), so macOS blocks the first
+    launch with "could not verify … is free of malware". Clear it with:
         xattr -dr com.apple.quarantine /Applications/WhisperDict.app
-    or install with `--no-quarantine` to avoid the prompt entirely.
+    (or System Settings → Privacy & Security → Open Anyway). Re-run after upgrades.
   EOS
 end
