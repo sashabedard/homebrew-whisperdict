@@ -1,5 +1,7 @@
 # WhisperDict — Homebrew tap
 
+> 📦 **Main project & source:** **[github.com/sashabedard/WhisperDict](https://github.com/sashabedard/WhisperDict)** — docs, releases, and issues live there. This repo is just the Homebrew cask.
+
 Install [WhisperDict](https://github.com/sashabedard/WhisperDict) (on-device push-to-talk dictation for macOS):
 
 ```bash
