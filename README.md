@@ -4,16 +4,22 @@ Install [WhisperDict](https://github.com/sashabedard/WhisperDict) (on-device pus
 
 ```bash
 brew tap sashabedard/whisperdict
-brew install --cask whisperdict
+brew install --cask --no-quarantine whisperdict
 ```
 
 The first install from a community tap, Homebrew asks you to confirm you trust it — that's expected. If it refuses, run `brew tap --force-auto-update` or:
 
 ```bash
-brew install --cask sashabedard/whisperdict/whisperdict
+brew install --cask --no-quarantine sashabedard/whisperdict/whisperdict
 ```
 
-Homebrew removes the quarantine flag on install, so the app launches without the macOS "Open Anyway" prompt — no notarization needed. On first run, grant **Microphone** and **Accessibility** permissions.
+WhisperDict is ad-hoc signed (not yet notarized), so the **`--no-quarantine`** flag matters: it tells Homebrew not to quarantine the app, which is what lets it launch without the macOS "could not verify … is free of malware" prompt. If you install **without** that flag, you'll hit Gatekeeper — recover with:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/WhisperDict.app
+```
+
+(or System Settings → Privacy & Security → **Open Anyway**). On first run, grant **Microphone** and **Accessibility** permissions.
 
 ## Updating
 

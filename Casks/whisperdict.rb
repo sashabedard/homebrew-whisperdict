@@ -24,6 +24,10 @@ cask "whisperdict" do
   caveats <<~EOS
     WhisperDict needs Accessibility permission to paste into other apps —
     grant it in System Settings → Privacy & Security → Accessibility on first use.
-    (Homebrew removes the quarantine flag, so there's no "Open Anyway" prompt.)
+
+    This app is ad-hoc signed (not yet notarized). If macOS blocks it with
+    "could not verify … is free of malware", run:
+        xattr -dr com.apple.quarantine /Applications/WhisperDict.app
+    or install with `--no-quarantine` to avoid the prompt entirely.
   EOS
 end
