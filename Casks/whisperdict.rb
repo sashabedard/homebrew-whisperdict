@@ -1,6 +1,6 @@
 cask "whisperdict" do
-  version "0.2.2"
-  sha256 "b8ce3409aa93d21d67b5e8c5154c451381bbb1d95a961daebdbd939d561ac51c"
+  version "0.2.3"
+  sha256 "e331eb8498659f5d278ceb4bfa2f8c32db70322f55185e4fcc7178aec94d908b"
 
   url "https://github.com/sashabedard/WhisperDict/releases/download/v#{version}/WhisperDict-#{version}.dmg"
   name "WhisperDict"
