@@ -9,7 +9,7 @@ brew tap sashabedard/pith
 brew install --cask pith
 ```
 
-The first install from a community tap, Homebrew asks you to confirm you trust it — that's expected. If it refuses, run `brew tap --force-auto-update` or `brew install --cask sashabedard/pith/pith`.
+The first install from a community tap, Homebrew may refuse with *"untrusted tap"* — run `brew trust sashabedard/pith` once, then re-run the install.
 
 Pith is signed with a Developer ID and **notarized by Apple**, so it launches with no Gatekeeper warning — no extra steps. On first run, grant **Microphone** and **Accessibility** permissions.
 
