@@ -1,6 +1,6 @@
 cask "pith" do
-  version "1.0.1"
-  sha256 "88d3ab635394a53ba11e496eb60e87762af8bca9b346f93ba7a2e0af1d27ce80"
+  version "1.0.2"
+  sha256 "194259349f14a6137ff2ddca74c2d3e9d0b04612bb89bfd4c71bbe245ca9a18d"
 
   url "https://github.com/sashabedard/Pith/releases/download/v#{version}/Pith-#{version}.dmg"
   name "Pith"
